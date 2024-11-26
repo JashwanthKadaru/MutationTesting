@@ -10,7 +10,7 @@ import java.util.Map;
 import org.junit.Test;
 
 public class Solver1Test {
-  @Test
+    @Test
     public void testSolver1() {
         Solver1 solver = new Solver1();
         solver.V=6;

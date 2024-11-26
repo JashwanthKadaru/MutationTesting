@@ -21,6 +21,21 @@
 
     <build>
         <plugins>
+            <!-- Add Failsafe Plugin for integration tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Configure PIT Plugin -->
             <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
@@ -32,11 +47,9 @@
                     <targetTests>
                         <param>com.mutationtesters.*</param>
                     </targetTests>
+                    <!-- Include integration tests -->
+                    <!-- <testSourceDirectory>src/integration-test/java</testSourceDirectory> -->
                 </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
             </plugin>
         </plugins>
     </build>
