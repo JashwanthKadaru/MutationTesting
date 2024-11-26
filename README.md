@@ -58,7 +58,7 @@ To Manually run the program *Main.java*, open the `Main.java` file in `src/main/
 ## Contributions
 Broadly, the contributions include:
 
-1. Developed a comprehensive Java codebase, featuring a `Main` class, `Solver` interface, and 11 `Solver` classes. Collected computationally hard problems focusing on graphs, trees, binary operations, search, and arrays.
+1. Developed a comprehensive Java codebase, featuring a `Main` class, `Solver` interface, and 11 `Solver` classes. Collected computationally hard problems focusing on graphs, trees, binary  search, and arrays.
 2. Configured the PIT mutation testing framework for the project, including adjustments for timeouts and mutators. Ultimately, timeouts were excluded due to unexpected behavior.
 3. Analyzed mutation testing results to identify weaknesses in the test suite, improved test coverage, and added additional test cases.
 4. Documented the testing process and results, providing insights into the effectiveness of mutation testing in the project.
